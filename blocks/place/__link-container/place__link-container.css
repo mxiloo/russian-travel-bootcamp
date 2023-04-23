@@ -1,0 +1,13 @@
+.place__link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 12px;
+}
+
+@media screen and (max-width: 320px) {
+    .place__link-container {
+        max-width: 288px;
+        margin: 0 16px 0 16px;
+    }
+}

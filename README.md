@@ -11,4 +11,4 @@ flexbox верстка;
 углубленное использование HTML;
 display:grid;
 
-Ссылка на сайт:
+Ссылка на сайт: https://mxiloo.github.io/russian-travel-bootcamp/

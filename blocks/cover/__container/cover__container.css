@@ -3,36 +3,53 @@
     background-image: url("../../../images/__background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     object-fit: cover;
-    width: 1184px;
-    height: 740px;
+    max-width: 1184px;
+    min-height: 740px;
     display: flex;
     align-items: center;
     position: relative;
+    margin: auto;
 }
 
-.cover__container:hover .cover__overlay {
+/*.cover__container:hover .cover__overlay {
+    opacity: 0.8;
+}*/
+
+.cover__container::before {
+    position: absolute;
+    content: "";
+    /*width: 1184px;*/
+    width: 100%;
+    height: 100%;
+    background: #2A2C2F;
+    /*display: block;*/
+    opacity: 0.3;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+}
+
+.cover__container:hover::before {
     opacity: 0.8;
 }
 
 @media screen and (max-width: 1024px) {
     .cover__container {
         margin: 0;
-        max-height: 640px;
+        min-height: 640px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cover__container {
-        margin: 0;
-        max-height: 480px;
+        min-height: 480px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover__container {
-        margin: 0;
-        max-height: 200px;
+        min-height: 200px;
     }
 }
 

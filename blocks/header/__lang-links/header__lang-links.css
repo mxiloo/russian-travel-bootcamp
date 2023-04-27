@@ -6,6 +6,13 @@
     margin: 0 48px 0 0;
 }
 
+@media screen and (max-width: 768px) {
+    .header__lang-links {
+        margin: 0 24px 0 0;
+    }
+
+}
+
 @media screen and (max-width: 320px) {
     .header__lang-links {
         margin: 0 16px 0 0;
